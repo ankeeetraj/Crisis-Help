@@ -109,7 +109,7 @@ export default function MapDashboard() {
     emergencyLevel?: Urgency
     type?: 'individual' | 'group'
   }>({})
-  const [mapCenter, setMapCenter] = useState<[number, number]>([7.8731, 80.7718])
+  const [mapCenter, setMapCenter] = useState<[number, number]>([20.5937, 78.9629])
   const [mapZoom, setMapZoom] = useState(8)
   const [mapBounds, setMapBounds] = useState<{ minLat: number; maxLat: number; minLng: number; maxLng: number } | null>(null)
   const [debouncedBounds, setDebouncedBounds] = useState<{ minLat: number; maxLat: number; minLng: number; maxLng: number } | null>(null)
@@ -332,7 +332,7 @@ export default function MapDashboard() {
     )
   }, [])
 
-  // Map center is fixed to Sri Lanka center
+  // Map center is fixed to India center
   // Province/District filter logic removed
 
   const handleApplyFilters = () => {
@@ -590,7 +590,7 @@ export default function MapDashboard() {
   return (
     <>
       <Head>
-        <title>Help Map - Sri Lanka Crisis Help</title>
+        <title>Help Map - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="min-h-screen bg-gray-50 relative">

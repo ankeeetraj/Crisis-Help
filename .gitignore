@@ -101,3 +101,4 @@ docker/nginx/ssl/*.key
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+apps/api/src/reset-admin-password.ts

@@ -154,7 +154,7 @@ export default function LoginPage() {
   return (
     <>
       <Head>
-        <title>Login as Volunteer - Sri Lanka Crisis Help</title>
+        <title>Login as Volunteer - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div

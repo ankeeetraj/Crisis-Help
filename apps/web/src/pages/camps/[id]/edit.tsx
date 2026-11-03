@@ -58,8 +58,8 @@ export default function EditCampPage() {
   
   const [formData, setFormData] = useState({
     name: '',
-    lat: '7.8731',
-    lng: '80.7718',
+    lat: '20.5937',
+    lng: '78.9629',
     campType: CampType.COMMUNITY,
     peopleRange: PeopleRange.ONE_TO_TEN,
     peopleCount: '',
@@ -110,8 +110,8 @@ export default function EditCampPage() {
         // Populate form with existing camp data
         setFormData({
           name: campData.name || '',
-          lat: campData.lat?.toString() || '7.8731',
-          lng: campData.lng?.toString() || '80.7718',
+          lat: campData.lat?.toString() || '20.5937',
+          lng: campData.lng?.toString() || '78.9629',
           campType: campData.campType || CampType.COMMUNITY,
           peopleRange: campData.peopleRange || PeopleRange.ONE_TO_TEN,
           peopleCount: campData.peopleCount?.toString() || '',
@@ -413,7 +413,7 @@ export default function EditCampPage() {
                               step="any"
                               value={formData.lat}
                               onChange={(e) => setFormData({ ...formData, lat: e.target.value })}
-                              placeholder="e.g., 6.9271"
+                              placeholder="e.g., 20.5937"
                               required
                               disabled={loading}
                             />
@@ -426,7 +426,7 @@ export default function EditCampPage() {
                               step="any"
                               value={formData.lng}
                               onChange={(e) => setFormData({ ...formData, lng: e.target.value })}
-                              placeholder="e.g., 79.8612"
+                              placeholder="e.g., 78.9629"
                               required
                               disabled={loading}
                             />
@@ -445,8 +445,8 @@ export default function EditCampPage() {
                         {showMap && (
                           <div className="border rounded-lg overflow-hidden">
                             <MapLocationPicker
-                              initialLat={parseFloat(formData.lat) || 7.8731}
-                              initialLng={parseFloat(formData.lng) || 80.7718}
+                              initialLat={parseFloat(formData.lat) || 20.5937}
+                              initialLng={parseFloat(formData.lng) || 78.9629}
                               onLocationChange={(lat, lng) => {
                                 setFormData({
                                   ...formData,

@@ -34,8 +34,8 @@ export default function EditHelpRequestPage() {
   const [helpRequest, setHelpRequest] = useState<HelpRequestWithOwnershipResponseDto | null>(null);
   
   const [formData, setFormData] = useState({
-    lat: 7.8731,
-    lng: 80.7718,
+    lat: 20.5937,
+    lng: 78.9629,
     urgency: Urgency.MEDIUM,
     shortNote: '',
     approxArea: '',
@@ -91,8 +91,8 @@ export default function EditHelpRequestPage() {
         
         // Populate form with existing data (including rationItems)
         setFormData({
-          lat: typeof hr.lat === 'number' ? hr.lat : parseFloat(hr.lat as any) || 7.8731,
-          lng: typeof hr.lng === 'number' ? hr.lng : parseFloat(hr.lng as any) || 80.7718,
+          lat: typeof hr.lat === 'number' ? hr.lat : parseFloat(hr.lat as any) || 20.5937,
+          lng: typeof hr.lng === 'number' ? hr.lng : parseFloat(hr.lng as any) || 78.9629,
           urgency: hr.urgency,
           shortNote: hr.shortNote || '',
           approxArea: hr.approxArea || '',
@@ -370,7 +370,7 @@ export default function EditHelpRequestPage() {
                     id="approxArea"
                     value={formData.approxArea}
                     onChange={(e) => setFormData({ ...formData, approxArea: e.target.value })}
-                    placeholder="e.g., Colombo, Galle"
+                    placeholder="e.g., New Delhi, Galle"
                     required
                   />
                 </div>

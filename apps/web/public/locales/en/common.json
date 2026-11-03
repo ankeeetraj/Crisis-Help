@@ -1,5 +1,10 @@
 {
-  "appName": "Sri Lanka Crisis Help",
+  "helpVolunteers": {
+  "title": "Help Volunteers",
+  "description": "Find volunteer camps and support their efforts",
+  "button": "Find Campaigns"
+  },
+  "appName": "Crisis Help",
   "welcome": "Connect Those in Need with Those Who Can Help",
   "subtitle": "Your support can make a difference",
   "iNeedHelp": "I Need Help",
@@ -118,7 +123,7 @@
   "yes": "Yes",
   "publishing": "Publishing...",
   "getCurrentLocation": "Get Current Location",
-  "orEnterCoordinatesManually": "Or enter coordinates manually (default: Sri Lanka center)",
+  "orEnterCoordinatesManually": "Or enter coordinates manually (default: India center)",
   "latitude": "Latitude",
   "longitude": "Longitude",
   "requestedItems": "Requested Items",
@@ -158,5 +163,6 @@
   "failedToSubmitHelpRequest": "Failed to submit help request",
   "campNamePlaceholder": "e.g., Community Center, School Name",
   "approximateAreaPlaceholder": "e.g., Kelaniya near bridge"
+
 }
 

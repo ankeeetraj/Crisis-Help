@@ -30,7 +30,7 @@ export default function Camp() {
     return (
       <div className={styles.container}>
         <Head>
-          <title>Camp Registered - Sri Lanka Crisis Help</title>
+          <title>Camp Registered - Crisis Help</title>
         </Head>
         <main className={styles.main}>
           <div className={styles.successMessage}>
@@ -46,7 +46,7 @@ export default function Camp() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>We Are a Camp - Sri Lanka Crisis Help</title>
+        <title>We Are a Camp - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main}>

@@ -1145,7 +1145,7 @@ export default function LandingPage() {
 
             {/* Cards Section */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 max-w-6xl mx-auto">
-              {/* Help Volunteers Card */}
+              {/* {t('helpVolunteers.title')} Card */}
               <Card className="cursor-pointer transition-all duration-500 hover:shadow-2xl hover:scale-105 border-0 bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-700 overflow-hidden group relative w-full md:w-80 lg:w-96 min-h-[320px] sm:min-h-[380px] md:min-h-[420px] flex flex-col">
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-600 via-blue-500 to-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 {/* Background Icon */}
@@ -1157,10 +1157,10 @@ export default function LandingPage() {
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-300/20 rounded-full blur-2xl -ml-16 -mb-16"></div>
                 <CardHeader className="text-center pb-6 pt-8 sm:pt-10 relative z-10 flex-1 flex flex-col justify-center">
                   <CardTitle className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-5 drop-shadow-lg">
-                    Help Volunteers
+                    {t('helpVolunteers.title')}
                   </CardTitle>
                   <CardDescription className="text-base sm:text-lg mt-2 text-blue-50 font-sub drop-shadow-md px-2">
-                    Find volunteer camps and support their efforts
+                    {t('helpVolunteers.description')}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0 pb-6 sm:pb-8 relative z-10">
@@ -1169,7 +1169,7 @@ export default function LandingPage() {
                     className="w-full h-12 sm:h-14 text-base sm:text-lg font-semibold bg-white text-blue-600 hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600 hover:text-white hover:shadow-xl transition-all duration-300 font-bold"
                     size="lg"
                   >
-                    Find Campaigns
+                    {t('helpVolunteers.button')}
                   </Button>
                 </CardContent>
               </Card>
@@ -1876,7 +1876,7 @@ export default function LandingPage() {
                     <li>Use the map view to see requests by location</li>
                     <li>Filter by urgency level (High, Medium) to prioritize</li>
                     <li>Check &quot;View My Requests&quot; to see your submitted requests</li>
-                    <li>You can help volunteer camps by clicking &quot;Help Volunteers&quot;</li>
+                    <li>You can help volunteer camps by clicking &quot;{t('helpVolunteers.title')}&quot;</li>
                   </ul>
                 </div>
               </div>
@@ -1905,7 +1905,7 @@ export default function LandingPage() {
                       <ul className="list-disc list-inside ml-4 space-y-1">
                         <li><strong>I Need Help:</strong> Request assistance for yourself or your family</li>
                         <li><strong>I Can Help:</strong> Browse and respond to requests from others</li>
-                        <li><strong>Help Volunteers:</strong> Support volunteer camps and their efforts</li>
+                        <li><strong>{t('helpVolunteers.title')}:</strong> Support volunteer camps and their efforts</li>
                       </ul>
                     </div>
                   </div>
@@ -1991,7 +1991,7 @@ export default function LandingPage() {
                         Volunteer camps are organized groups working to help communities. You can:
                       </p>
                       <ol className="list-decimal list-inside ml-4 space-y-1">
-                        <li>Click &quot;Help Volunteers&quot; to find active camps</li>
+                        <li>Click &quot;{t('helpVolunteers.title')}&quot; to find active camps</li>
                         <li>Browse available campaigns and their needs</li>
                         <li>See drop-off locations for donations</li>
                         <li>Contact camps directly to coordinate donations or volunteer work</li>

@@ -33,7 +33,7 @@ export function ProvideHelpSection() {
           <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-xl border-2 border-accent/20">
             <img
               src="https://static.independent.co.uk/2025/11/30/10/30/TOPSHOT-SRI-LANKA-WEATHER-FLOOD-5nysiea9.jpeg?quality=75&width=1250&crop=3%3A2%2Csmart&trim=0%2C0%2C0%2C0&auto=webp"
-              alt="Sri Lanka flood relief support"
+              alt="India flood relief support"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-accent/10 via-transparent to-transparent" />

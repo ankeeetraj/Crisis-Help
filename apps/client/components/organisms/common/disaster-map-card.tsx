@@ -17,7 +17,7 @@ export function DisasterMapCard() {
             {/* Mock map image or illustration */}
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Sri_Lanka_location_map.svg"
-              alt="Sri Lanka Relief Map"
+              alt="India Relief Map"
               className="object-cover w-full h-full opacity-80"
             />
             {/* Example markers */}
@@ -28,7 +28,7 @@ export function DisasterMapCard() {
                   title="Incident"
                 ></span>
                 <span className="ml-2 text-xs font-semibold text-black drop-shadow">
-                  Colombo: Flood
+                  New Delhi: Flood
                 </span>
               </span>
             </div>

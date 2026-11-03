@@ -21,7 +21,7 @@ export interface ICreateHelpRequest {
   // Ration items with quantities
   rationItems?: Record<string, number>; // Map of item codes to quantities (e.g., { 'dry_rations': 5, 'bottled_water': 10 })
   // Location details (mandatory in frontend, optional in backend)
-  province?: Province; // Sri Lanka province enum
-  district?: District; // Sri Lanka district enum
+  province?: Province; // India province enum
+  district?: District; // India district enum
 }
 

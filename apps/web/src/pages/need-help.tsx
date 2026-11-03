@@ -54,7 +54,7 @@ export default function NeedHelp() {
   return (
     <>
       <Head>
-        <title>I Need Help - Sri Lanka Crisis Help</title>
+        <title>I Need Help - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <EmergencyRequestForm

@@ -60,7 +60,7 @@ export default function Help() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>I Can Help - Sri Lanka Crisis Help</title>
+        <title>I Can Help - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main}>

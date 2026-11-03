@@ -85,7 +85,7 @@ export default function DonatePage() {
     return (
       <>
         <Head>
-          <title>Make a Donation - Sri Lanka Crisis Help</title>
+          <title>Make a Donation - Crisis Help</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -102,7 +102,7 @@ export default function DonatePage() {
     return (
       <>
         <Head>
-          <title>Make a Donation - Sri Lanka Crisis Help</title>
+          <title>Make a Donation - Crisis Help</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <div className="min-h-screen bg-gray-50">
@@ -132,7 +132,7 @@ export default function DonatePage() {
   return (
     <>
       <Head>
-        <title>Make a Donation - Sri Lanka Crisis Help</title>
+        <title>Make a Donation - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="min-h-screen bg-gray-50">

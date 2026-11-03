@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'RebuildSL.com - Rebuild Sri Lanka | Disaster Relief Platform',
+  title: 'RebuildSL.com - Rebuild India | Disaster Relief Platform',
   description:
-    'Request/Provide help to the people in Sri Lanka who are affected by the natural disaster. Connecting communities in need with volunteers and organizations.',
+    'Request/Provide help to the people in India who are affected by the natural disaster. Connecting communities in need with volunteers and organizations.',
 }
 
 export default function RootLayout({

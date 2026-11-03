@@ -358,7 +358,7 @@ const PopupContent: React.FC<{
 const Map: React.FC<MapProps> = ({
   helpRequests,
   camps,
-  center = [7.8731, 80.7718], // Sri Lanka center
+  center = [20.5937, 78.9629], // India center
   zoom = 7,
   centerUpdateKey = 0,
   onRequestClick,

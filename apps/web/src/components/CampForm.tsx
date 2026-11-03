@@ -24,8 +24,8 @@ const CampForm: React.FC<CampFormProps> = ({ onSubmit, onCancel }) => {
     needs: [],
     shortNote: '',
     contactType: ContactType.NONE,
-    lat: 7.8731,
-    lng: 80.7718,
+    lat: 20.5937,
+    lng: 78.9629,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);

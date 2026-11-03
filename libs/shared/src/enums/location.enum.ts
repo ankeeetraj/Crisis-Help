@@ -1,156 +1,129 @@
 /**
- * Enums for Sri Lanka Provinces and Districts
- * Using numeric values for better database query performance
+ * Enums for Odisha State and its 30 Districts
+ * Using numeric values for database compatibility
  */
 
-/**
- * Sri Lanka Provinces (9 provinces)
- */
 export enum Province {
-  WESTERN = 1,
-  CENTRAL = 2,
-  SOUTHERN = 3,
-  NORTHERN = 4,
-  EASTERN = 5,
-  NORTH_WESTERN = 6,
-  NORTH_CENTRAL = 7,
-  UVA = 8,
-  SABARAGAMUWA = 9,
+  ODISHA = 1,
 }
 
-/**
- * Sri Lanka Districts (25 districts)
- */
 export enum District {
-  // Western Province (1)
-  COLOMBO = 1,
-  GAMPAHA = 2,
-  KALUTARA = 3,
-  
-  // Central Province (2)
-  KANDY = 4,
-  MATALE = 5,
-  NUWARA_ELIYA = 6,
-  
-  // Southern Province (3)
-  GALLE = 7,
-  MATARA = 8,
-  HAMBANTOTA = 9,
-  
-  // Northern Province (4)
-  JAFFNA = 10,
-  KILINOCHCHI = 11,
-  MANNAR = 12,
-  MULLAITIVU = 13,
-  VAVUNIYA = 14,
-  
-  // Eastern Province (5)
-  BATTICALOA = 15,
-  AMPARA = 16,
-  TRINCOMALEE = 17,
-  
-  // North Western Province (6)
-  KURUNEGALA = 18,
-  PUTTALAM = 19,
-  
-  // North Central Province (7)
-  ANURADHAPURA = 20,
-  POLONNARUWA = 21,
-  
-  // Uva Province (8)
-  BADULLA = 22,
-  MONARAGALA = 23,
-  
-  // Sabaragamuwa Province (9)
-  RATNAPURA = 24,
-  KEGALLE = 25,
+  ANGUL = 1,
+  BALANGIR = 2,
+  BALASORE = 3,
+  BARGARH = 4,
+  BHADRAK = 5,
+  BOUDH = 6,
+  CUTTACK = 7,
+  DEOGARH = 8,
+  DHENKANAL = 9,
+  GAJAPATI = 10,
+  GANJAM = 11,
+  JAGATSINGHPUR = 12,
+  JAJPUR = 13,
+  JHARSUGUDA = 14,
+  KALAHANDI = 15,
+  KANDHAMAL = 16,
+  KENDRAPARA = 17,
+  KEONJHAR = 18,
+  KHORDHA = 19,
+  KORAPUT = 20,
+  MALKANGIRI = 21,
+  MAYURBHANJ = 22,
+  NABARANGPUR = 23,
+  NAYAGARH = 24,
+  NUAPADA = 25,
+  PURI = 26,
+  RAYAGADA = 27,
+  SAMBALPUR = 28,
+  SUBARNAPUR = 29,
+  SUNDARGARH = 30,
 }
 
-/**
- * Mapping of Province enum to display name
- */
 export const PROVINCE_NAMES: Record<Province, string> = {
-  [Province.WESTERN]: 'Western Province',
-  [Province.CENTRAL]: 'Central Province',
-  [Province.SOUTHERN]: 'Southern Province',
-  [Province.NORTHERN]: 'Northern Province',
-  [Province.EASTERN]: 'Eastern Province',
-  [Province.NORTH_WESTERN]: 'North Western Province',
-  [Province.NORTH_CENTRAL]: 'North Central Province',
-  [Province.UVA]: 'Uva Province',
-  [Province.SABARAGAMUWA]: 'Sabaragamuwa Province',
+  [Province.ODISHA]: 'Odisha',
 };
 
-/**
- * Mapping of District enum to display name
- */
 export const DISTRICT_NAMES: Record<District, string> = {
-  [District.COLOMBO]: 'Colombo',
-  [District.GAMPAHA]: 'Gampaha',
-  [District.KALUTARA]: 'Kalutara',
-  [District.KANDY]: 'Kandy',
-  [District.MATALE]: 'Matale',
-  [District.NUWARA_ELIYA]: 'Nuwara Eliya',
-  [District.GALLE]: 'Galle',
-  [District.MATARA]: 'Matara',
-  [District.HAMBANTOTA]: 'Hambantota',
-  [District.JAFFNA]: 'Jaffna',
-  [District.KILINOCHCHI]: 'Kilinochchi',
-  [District.MANNAR]: 'Mannar',
-  [District.MULLAITIVU]: 'Mullaitivu',
-  [District.VAVUNIYA]: 'Vavuniya',
-  [District.BATTICALOA]: 'Batticaloa',
-  [District.AMPARA]: 'Ampara',
-  [District.TRINCOMALEE]: 'Trincomalee',
-  [District.KURUNEGALA]: 'Kurunegala',
-  [District.PUTTALAM]: 'Puttalam',
-  [District.ANURADHAPURA]: 'Anuradhapura',
-  [District.POLONNARUWA]: 'Polonnaruwa',
-  [District.BADULLA]: 'Badulla',
-  [District.MONARAGALA]: 'Monaragala',
-  [District.RATNAPURA]: 'Ratnapura',
-  [District.KEGALLE]: 'Kegalle',
+  [District.ANGUL]: 'Angul',
+  [District.BALANGIR]: 'Balangir',
+  [District.BALASORE]: 'Balasore',
+  [District.BARGARH]: 'Bargarh',
+  [District.BHADRAK]: 'Bhadrak',
+  [District.BOUDH]: 'Boudh',
+  [District.CUTTACK]: 'Cuttack',
+  [District.DEOGARH]: 'Deogarh',
+  [District.DHENKANAL]: 'Dhenkanal',
+  [District.GAJAPATI]: 'Gajapati',
+  [District.GANJAM]: 'Ganjam',
+  [District.JAGATSINGHPUR]: 'Jagatsinghpur',
+  [District.JAJPUR]: 'Jajpur',
+  [District.JHARSUGUDA]: 'Jharsuguda',
+  [District.KALAHANDI]: 'Kalahandi',
+  [District.KANDHAMAL]: 'Kandhamal',
+  [District.KENDRAPARA]: 'Kendrapara',
+  [District.KEONJHAR]: 'Keonjhar',
+  [District.KHORDHA]: 'Khordha',
+  [District.KORAPUT]: 'Koraput',
+  [District.MALKANGIRI]: 'Malkangiri',
+  [District.MAYURBHANJ]: 'Mayurbhanj',
+  [District.NABARANGPUR]: 'Nabarangpur',
+  [District.NAYAGARH]: 'Nayagarh',
+  [District.NUAPADA]: 'Nuapada',
+  [District.PURI]: 'Puri',
+  [District.RAYAGADA]: 'Rayagada',
+  [District.SAMBALPUR]: 'Sambalpur',
+  [District.SUBARNAPUR]: 'Subarnapur',
+  [District.SUNDARGARH]: 'Sundargarh',
 };
 
-/**
- * Mapping of Province to its Districts
- */
 export const PROVINCE_DISTRICTS: Record<Province, District[]> = {
-  [Province.WESTERN]: [District.COLOMBO, District.GAMPAHA, District.KALUTARA],
-  [Province.CENTRAL]: [District.KANDY, District.MATALE, District.NUWARA_ELIYA],
-  [Province.SOUTHERN]: [District.GALLE, District.MATARA, District.HAMBANTOTA],
-  [Province.NORTHERN]: [District.JAFFNA, District.KILINOCHCHI, District.MANNAR, District.MULLAITIVU, District.VAVUNIYA],
-  [Province.EASTERN]: [District.BATTICALOA, District.AMPARA, District.TRINCOMALEE],
-  [Province.NORTH_WESTERN]: [District.KURUNEGALA, District.PUTTALAM],
-  [Province.NORTH_CENTRAL]: [District.ANURADHAPURA, District.POLONNARUWA],
-  [Province.UVA]: [District.BADULLA, District.MONARAGALA],
-  [Province.SABARAGAMUWA]: [District.RATNAPURA, District.KEGALLE],
+  [Province.ODISHA]: [
+    District.ANGUL,
+    District.BALANGIR,
+    District.BALASORE,
+    District.BARGARH,
+    District.BHADRAK,
+    District.BOUDH,
+    District.CUTTACK,
+    District.DEOGARH,
+    District.DHENKANAL,
+    District.GAJAPATI,
+    District.GANJAM,
+    District.JAGATSINGHPUR,
+    District.JAJPUR,
+    District.JHARSUGUDA,
+    District.KALAHANDI,
+    District.KANDHAMAL,
+    District.KENDRAPARA,
+    District.KEONJHAR,
+    District.KHORDHA,
+    District.KORAPUT,
+    District.MALKANGIRI,
+    District.MAYURBHANJ,
+    District.NABARANGPUR,
+    District.NAYAGARH,
+    District.NUAPADA,
+    District.PURI,
+    District.RAYAGADA,
+    District.SAMBALPUR,
+    District.SUBARNAPUR,
+    District.SUNDARGARH,
+  ],
 };
 
-/**
- * Get province name from enum value
- */
 export function getProvinceName(province: Province): string {
   return PROVINCE_NAMES[province] || 'Unknown';
 }
 
-/**
- * Get district name from enum value
- */
 export function getDistrictName(district: District): string {
   return DISTRICT_NAMES[district] || 'Unknown';
 }
 
-/**
- * Get districts for a province
- */
 export function getDistrictsForProvince(province: Province): District[] {
   return PROVINCE_DISTRICTS[province] || [];
 }
 
-/**
- * Get province for a district
- */
 export function getProvinceForDistrict(district: District): Province | null {
   for (const [province, districts] of Object.entries(PROVINCE_DISTRICTS)) {
     if (districts.includes(district)) {
@@ -159,4 +132,3 @@ export function getProvinceForDistrict(district: District): Province | null {
   }
   return null;
 }
-

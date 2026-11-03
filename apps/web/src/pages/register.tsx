@@ -72,7 +72,7 @@ export default function RegisterPage() {
   return (
     <>
       <Head>
-        <title>Register as Donor - Sri Lanka Crisis Help</title>
+        <title>Register as Donor - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 p-4">

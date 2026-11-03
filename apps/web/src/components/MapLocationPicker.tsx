@@ -19,8 +19,8 @@ const MapLocationPickerInternal: React.FC<MapLocationPickerProps> = ({
   initialLng,
   height = '400px',
 }) => {
-  // Default to Sri Lanka center for map view only, but don't set as selected location
-  const defaultMapCenter: [number, number] = [7.8731, 80.7718]
+  // Default to India center for map view only, but don't set as selected location
+  const defaultMapCenter: [number, number] = [20.5937, 78.9629]
   const [selectedLocation, setSelectedLocation] = useState<[number, number]>(() => {
     const lat = typeof initialLat === 'number' ? initialLat : (initialLat ? parseFloat(String(initialLat)) : 0);
     const lng = typeof initialLng === 'number' ? initialLng : (initialLng ? parseFloat(String(initialLng)) : 0);

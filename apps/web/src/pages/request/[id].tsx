@@ -346,7 +346,7 @@ export default function RequestDetailsPage() {
   return (
     <>
       <Head>
-        <title>Request Details - Sri Lanka Crisis Help</title>
+        <title>Request Details - Crisis Help</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">

@@ -11,8 +11,7 @@ import { Globe } from 'lucide-react';
 
 const languages = [
   { code: 'en', name: 'English', nativeName: 'English' },
-  { code: 'si', name: 'Sinhala', nativeName: 'සිංහල' },
-  { code: 'ta', name: 'Tamil', nativeName: 'தமிழ்' },
+  { code: 'hi', name: 'Hindi', nativeName: 'हिन्दी' },
 ];
 
 interface LanguageSwitcherProps {

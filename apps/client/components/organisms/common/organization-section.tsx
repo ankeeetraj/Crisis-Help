@@ -18,7 +18,7 @@ export function OrganizationSection() {
               <P className="leading-relaxed text-muted-foreground">
                 Once registered, you can host events, manage volunteers, coordinate donations, and connect with other
                 organizations working towards the same goal. Join our network of organizations dedicated to supporting
-                communities affected by natural disasters across Sri Lanka.
+                communities affected by natural disasters across India.
               </P>
             </div>
             <Button size="lg" variant="outline" className="group border-accent/40 hover:border-accent hover:bg-accent/5">

@@ -14,7 +14,7 @@ export function Footer() {
           <div className="space-y-4">
             <Logo size="md" />
             <Muted className="text-neutral-400 text-sm leading-relaxed">
-              Connecting communities in need with volunteers and organizations across Sri Lanka. Together, we rebuild
+              Connecting communities in need with volunteers and organizations across India. Together, we rebuild
               and restore hope.
             </Muted>
             <div className="flex gap-3">
@@ -115,7 +115,7 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="size-4 shrink-0 mt-0.5 text-accent" />
-                <span>Colombo, Sri Lanka</span>
+                <span>New Delhi, India</span>
               </div>
             </div>
           </div>
@@ -125,12 +125,12 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <Small className="text-neutral-500">
-              © {currentYear} RebuildSL.com (Rebuild Sri Lanka). All rights reserved.
+              © {currentYear} RebuildSL.com (Rebuild India). All rights reserved.
             </Small>
             <div className="flex items-center gap-2 text-neutral-500 text-sm">
               <span>Made with</span>
               <Heart className="size-4 text-red-500 fill-red-500" />
-              <span>for Sri Lanka</span>
+              <span>for India</span>
             </div>
           </div>
         </div>

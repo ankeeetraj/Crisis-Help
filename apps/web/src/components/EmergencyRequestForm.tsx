@@ -17,14 +17,14 @@ import { ICreateHelpRequest } from '@nx-mono-repo-deployment-test/shared/src/int
 import {
   Urgency,
   ContactType,
-  Province,
-  District,
-  PROVINCE_NAMES,
-  DISTRICT_NAMES,
-  PROVINCE_DISTRICTS,
 } from '@nx-mono-repo-deployment-test/shared/src/enums'
-import { Minus, Plus, MapPin } from 'lucide-react'
 
+import {
+  INDIA_STATES_AND_UTS,
+  INDIA_DISTRICTS,
+} from '../data/india-locations'
+
+import { Minus, Plus, MapPin } from 'lucide-react'
 interface EmergencyRequestFormProps {
   onSubmit: (data: ICreateHelpRequest) => Promise<{ success: boolean; data?: any; error?: string }>
   onCancel?: () => void
@@ -42,10 +42,10 @@ interface FormData {
   pets: number
   gpsLocation: { lat: number; lng: number }
   address: string
-  province: Province | 0
-  district: District | 0
+  province: number | 0
+  district: number | 0
   notes: string
-  rationItems: Record<string, number> // Changed from boolean to number (0 = not selected, >0 = quantity)
+  rationItems: Record<string, number>
   specialNeeds: string
   urgent: boolean
 }
@@ -484,7 +484,7 @@ export default function EmergencyRequestForm({
                   id="province"
                   value={formData.province || 0}
                   onChange={(e) => {
-                    const provinceValue = e.target.value ? Number(e.target.value) as Province : 0
+                    const provinceValue = e.target.value ? Number(e.target.value) : 0
                     setFormData({ 
                       ...formData, 
                       province: provinceValue,
@@ -495,11 +495,7 @@ export default function EmergencyRequestForm({
                   required
                 >
                   <option value="0">Select Province</option>
-                  {Object.entries(PROVINCE_NAMES).map(([key, name]) => (
-                    <option key={key} value={key}>
-                      {name}
-                    </option>
-                  ))}
+                  <option value={1}>Odisha</option>
                 </select>
                 {(!formData.province || (formData.province as number) === 0) && (
                   <p className="text-sm text-red-600">Province is required</p>
@@ -514,7 +510,7 @@ export default function EmergencyRequestForm({
                   id="district"
                   value={formData.district || 0}
                   onChange={(e) => {
-                    const districtValue = e.target.value ? Number(e.target.value) as District : 0
+                    const districtValue = e.target.value ? Number(e.target.value) : 0
                     setFormData({ ...formData, district: districtValue })
                   }}
                   className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -522,9 +518,9 @@ export default function EmergencyRequestForm({
                   disabled={!formData.province || (formData.province as number) === 0}
                 >
                   <option value="0">Select District</option>
-                  {formData.province && PROVINCE_DISTRICTS[formData.province]?.map((district) => (
-                    <option key={district} value={district}>
-                      {DISTRICT_NAMES[district]}
+                  {formData.province && INDIA_DISTRICTS[formData.province]?.map((name, index) => (
+                    <option key={index} value={index + 1}>
+                      {name}
                     </option>
                   ))}
                 </select>

@@ -54,8 +54,8 @@ export default function CreateCampPage() {
   
   const [formData, setFormData] = useState({
     name: '',
-    lat: '7.8731',
-    lng: '80.7718',
+    lat: '20.5937',
+    lng: '78.9629',
     campType: CampType.COMMUNITY,
     peopleRange: PeopleRange.ONE_TO_TEN,
     peopleCount: '',
@@ -284,7 +284,7 @@ export default function CreateCampPage() {
                               step="any"
                               value={formData.lat}
                               onChange={(e) => setFormData({ ...formData, lat: e.target.value })}
-                              placeholder="e.g., 6.9271"
+                              placeholder="e.g., 20.5937"
                               required
                               disabled={loading}
                             />
@@ -297,7 +297,7 @@ export default function CreateCampPage() {
                               step="any"
                               value={formData.lng}
                               onChange={(e) => setFormData({ ...formData, lng: e.target.value })}
-                              placeholder="e.g., 79.8612"
+                              placeholder="e.g., 78.9629"
                               required
                               disabled={loading}
                             />
@@ -316,8 +316,8 @@ export default function CreateCampPage() {
                         {showMap && (
                           <div className="border rounded-lg overflow-hidden">
                             <MapLocationPicker
-                              initialLat={parseFloat(formData.lat) || 7.8731}
-                              initialLng={parseFloat(formData.lng) || 80.7718}
+                              initialLat={parseFloat(formData.lat) || 20.5937}
+                              initialLng={parseFloat(formData.lng) || 78.9629}
                               onLocationChange={(lat, lng) => {
                                 setFormData({
                                   ...formData,

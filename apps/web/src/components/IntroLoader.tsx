@@ -125,7 +125,7 @@ export const IntroLoader = ({ onFinish }: IntroLoaderProps) => {
           ) : (
             <Image
               src="/loading/map.webp"
-              alt="Sri Lanka Map"
+              alt="India Map"
               width={40}
               height={40}
               className="w-7 md:w-10 opacity-100 transition-all duration-400 drop-shadow-xl"

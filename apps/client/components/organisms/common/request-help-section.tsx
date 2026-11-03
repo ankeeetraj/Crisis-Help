@@ -8,7 +8,7 @@ const topPriorityRequests = [
   {
     id: 1,
     title: 'Emergency Food Supplies Needed',
-    location: 'Colombo District, Western Province',
+    location: 'New Delhi District, Western Province',
     priority: 'high' as const,
     itemsNeeded: ['Rice (50kg bags)', 'Canned food', 'Bottled water'],
   },
@@ -31,7 +31,7 @@ export function RequestHelpSection() {
             <div className="space-y-6">
               <H2 className="text-foreground">Need Help? We're Here for You</H2>
               <P className="text-lg leading-relaxed text-muted-foreground">
-                If you or your community are affected by the ongoing natural disasters in Sri Lanka, we're here to
+                If you or your community are affected by the ongoing natural disasters in India, we're here to
                 support you. Our platform connects those in need with volunteers and organizations ready to provide
                 assistance.
               </P>

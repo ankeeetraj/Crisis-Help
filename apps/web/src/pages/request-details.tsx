@@ -33,7 +33,7 @@ export default function RequestDetailsPage() {
     return (
       <>
         <Head>
-          <title>Request Details - Sri Lanka Crisis Help</title>
+          <title>Request Details - Crisis Help</title>
         </Head>
         <div className="min-h-screen bg-gray-50 flex items-center justify-center">
           <div className="text-center">

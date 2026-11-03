@@ -22,8 +22,8 @@ export interface IHelpRequest {
   // Ration items
   rationItems?: string[]; // Array of selected ration item IDs (e.g., ['dry_rations', 'bottled_water'])
   // Location details
-  province?: Province; // Sri Lanka province enum (optional in backend)
-  district?: District; // Sri Lanka district enum (optional in backend)
+  province?: Province; // India province enum (optional in backend)
+  district?: District; // India district enum (optional in backend)
   status?: HelpRequestStatus;
   createdAt?: Date;
   updatedAt?: Date;

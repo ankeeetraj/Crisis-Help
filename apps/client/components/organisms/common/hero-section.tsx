@@ -6,13 +6,13 @@ export function HeroSection() {
   return (
     <div className="col-span-1 space-y-4">
       <PageHeader className="text-white">
-        Rebuild Sri Lanka
+        Rebuild India
         <br />
         <span className="text-orange-500">Disaster Relief Platform</span>
       </PageHeader>
       <PageSubheader className="text-white">
         Join us in delivering hope and help. Connect with those in need or offer support to
-        communities impacted by ongoing crises across Sri Lanka.
+        communities impacted by ongoing crises across India.
       </PageSubheader>
       <div className="flex gap-2">
         <Button variant={'destructive'}>

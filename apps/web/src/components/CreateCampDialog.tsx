@@ -45,8 +45,8 @@ interface CreateCampDialogProps {
 
 const initialFormData = {
   name: "",
-  lat: "7.8731",
-  lng: "80.7718",
+  lat: "20.5937",
+  lng: "78.9629",
   campType: CampType.COMMUNITY,
   peopleRange: PeopleRange.ONE_TO_TEN,
   peopleCount: "",
@@ -311,8 +311,8 @@ export default function CreateCampDialog({ isOpen, onClose, onCampCreated }: Cre
                   {showMap && (
                     <div className="p-2 border rounded-lg overflow-hidden">
                       <MapLocationPicker
-                        initialLat={Number.parseFloat(formData.lat) || 7.8731}
-                        initialLng={Number.parseFloat(formData.lng) || 80.7718}
+                        initialLat={Number.parseFloat(formData.lat) || 20.5937}
+                        initialLng={Number.parseFloat(formData.lng) || 78.9629}
                         onLocationChange={(lat, lng) => {
                           setFormData({
                             ...formData,

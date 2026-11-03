@@ -12,8 +12,8 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
   initialLat,
   initialLng,
 }) => {
-  const [lat, setLat] = useState<number>(initialLat || 7.8731); // Default to Sri Lanka center
-  const [lng, setLng] = useState<number>(initialLng || 80.7718);
+  const [lat, setLat] = useState<number>(initialLat || 20.5937); // Default to India center
+  const [lng, setLng] = useState<number>(initialLng || 78.9629);
   const [isGettingLocation, setIsGettingLocation] = useState(false);
   const [locationError, setLocationError] = useState<string | null>(null);
 
@@ -89,7 +89,7 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
             step="0.000001"
             value={lat}
             onChange={handleLatChange}
-            placeholder="7.8731"
+            placeholder="20.5937"
           />
         </div>
         <div className={styles.coordinateInput}>
@@ -100,7 +100,7 @@ const LocationPicker: React.FC<LocationPickerProps> = ({
             step="0.000001"
             value={lng}
             onChange={handleLngChange}
-            placeholder="80.7718"
+            placeholder="78.9629"
           />
         </div>
       </div>

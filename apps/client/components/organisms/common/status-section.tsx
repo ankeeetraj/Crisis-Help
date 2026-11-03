@@ -15,7 +15,7 @@ const topPriorityRequests = [
   {
     id: 1,
     title: 'Emergency Food Supplies Needed',
-    location: 'Colombo District, Western Province',
+    location: 'New Delhi District, Western Province',
     priority: 'high' as const,
     itemsNeeded: ['Rice (50kg bags)', 'Canned food', 'Bottled water', 'Medical supplies'],
   },

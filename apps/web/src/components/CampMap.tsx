@@ -57,8 +57,8 @@ const CampMap: React.FC<CampMapProps> = ({ camp }) => {
     
     if (isNaN(campLat) || isNaN(campLng)) {
       return {
-        center: [7.8731, 80.7718] as [number, number], // Default to Sri Lanka center
-        bounds: L.latLngBounds([7.8731, 80.7718], [7.8731, 80.7718]),
+        center: [20.5937, 78.9629] as [number, number], // Default to India center
+        bounds: L.latLngBounds([20.5937, 78.9629], [20.5937, 78.9629]),
         validDropOffLocations: [],
       }
     }

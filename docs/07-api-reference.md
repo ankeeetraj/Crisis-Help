@@ -295,11 +295,11 @@ Get a list of all help requests.
   "data": [
     {
       "id": 1,
-      "lat": 6.9271,
-      "lng": 79.8612,
+      "lat": 20.5937,
+      "lng": 78.9629,
       "urgency": "HIGH",
       "shortNote": "Need food and water",
-      "approxArea": "Colombo",
+      "approxArea": "New Delhi",
       "contactType": "PHONE",
       "contact": "+94771234567",
       "status": "OPEN",
@@ -326,11 +326,11 @@ Get a specific help request with full details.
   "data": {
     "id": 1,
     "userId": 5,
-    "lat": 6.9271,
-    "lng": 79.8612,
+    "lat": 20.5937,
+    "lng": 78.9629,
     "urgency": "HIGH",
     "shortNote": "Need food and water",
-    "approxArea": "Colombo",
+    "approxArea": "New Delhi",
     "contactType": "PHONE",
     "contact": "+94771234567",
     "name": "John Doe",
@@ -358,11 +358,11 @@ Create a new help request.
 **Request Body:**
 ```json
 {
-  "lat": 6.9271,
-  "lng": 79.8612,
+  "lat": 20.5937,
+  "lng": 78.9629,
   "urgency": "HIGH",
   "shortNote": "Need food and water",
-  "approxArea": "Colombo",
+  "approxArea": "New Delhi",
   "contactType": "PHONE",
   "contact": "+94771234567",
   "name": "John Doe",
@@ -429,10 +429,10 @@ Get a list of all relief camps.
   "data": [
     {
       "id": 1,
-      "lat": 6.9271,
-      "lng": 79.8612,
+      "lat": 20.5937,
+      "lng": 78.9629,
       "campType": "OFFICIAL",
-      "name": "Colombo Relief Camp",
+      "name": "New Delhi Relief Camp",
       "peopleRange": "10-50",
       "needs": ["Food", "Medical"],
       "status": "ACTIVE",
@@ -465,10 +465,10 @@ Create a new relief camp.
 **Request Body:**
 ```json
 {
-  "lat": 6.9271,
-  "lng": 79.8612,
+  "lat": 20.5937,
+  "lng": 78.9629,
   "campType": "OFFICIAL",
-  "name": "Colombo Relief Camp",
+  "name": "New Delhi Relief Camp",
   "peopleRange": "10-50",
   "needs": ["Food", "Medical"],
   "shortNote": "Official relief camp",
@@ -476,7 +476,7 @@ Create a new relief camp.
   "contact": "+94771234567",
   "peopleCount": 25,
   "description": "Full description",
-  "location": "Colombo, Sri Lanka"
+  "location": "New Delhi, India"
 }
 ```
 
@@ -645,11 +645,11 @@ Create a new volunteer club.
 **Request Body:**
 ```json
 {
-  "name": "Colombo Relief Organization",
+  "name": "New Delhi Relief Organization",
   "description": "Non-profit relief organization",
   "contactNumber": "+94771234567",
   "email": "contact@example.com",
-  "address": "123 Main St, Colombo"
+  "address": "123 Main St, New Delhi"
 }
 ```
 

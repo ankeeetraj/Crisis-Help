@@ -20,8 +20,8 @@ const HelpRequestForm: React.FC<HelpRequestFormProps> = ({ onSubmit, onCancel })
     contactType: ContactType.NONE,
     shortNote: '',
     approxArea: '',
-    lat: 7.8731,
-    lng: 80.7718,
+    lat: 20.5937,
+    lng: 78.9629,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);

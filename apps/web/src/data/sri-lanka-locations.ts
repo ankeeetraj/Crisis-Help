@@ -1,4 +1,4 @@
-// Sri Lanka Provinces and Districts data
+// India Provinces and Districts data
 export const SRI_LANKA_PROVINCES = [
   'Western Province',
   'Central Province',
@@ -13,7 +13,7 @@ export const SRI_LANKA_PROVINCES = [
 
 export const SRI_LANKA_DISTRICTS: Record<string, string[]> = {
   'Western Province': [
-    'Colombo',
+    'New Delhi',
     'Gampaha',
     'Kalutara',
   ],
@@ -59,7 +59,7 @@ export const SRI_LANKA_DISTRICTS: Record<string, string[]> = {
 
 // District coordinates (approximate centers)
 export const DISTRICT_COORDINATES: Record<string, [number, number]> = {
-  'Colombo': [6.9271, 79.8612],
+  'New Delhi': [20.5937, 78.9629],
   'Gampaha': [7.0847, 80.0097],
   'Kalutara': [6.5854, 79.9607],
   'Kandy': [7.2906, 80.6337],
@@ -96,9 +96,9 @@ export function getMockCoordinates(district?: string): [number, number] {
       lng + (Math.random() - 0.5) * 0.1,
     ]
   }
-  // Default to Sri Lanka center with random offset
+  // Default to India center with random offset
   return [
-    7.8731 + (Math.random() - 0.5) * 2,
-    80.7718 + (Math.random() - 0.5) * 2,
+    20.5937 + (Math.random() - 0.5) * 2,
+    78.9629 + (Math.random() - 0.5) * 2,
   ]
 }
